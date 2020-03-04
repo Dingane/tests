@@ -6,7 +6,7 @@ script:
   - docker images dingane/test
 
 before_deploy:
-  - docker login -u mosipadp -p 2fT&(cEHYRML8Wu
+  - docker login -u <mosipadp> -p <2fT&(cEHYRML8Wu>
 
 deploy:
   provider: script
