@@ -9,7 +9,7 @@ before_deploy:
   - docker login -u mosipadp -p 2fT&(cEHYRML8Wu
 
 deploy:
-  provider: : script
+  provider: script
   script: docker push mosipadp/test
   on:
     branch: master
