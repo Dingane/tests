@@ -2,5 +2,5 @@ sudo: requird
 services:
   - docker
 script:
-  - docker build -t mosipadp/node
-  - docker images mosipadp/node
+  - docker build -t dingane/node
+  - docker images dingane/node
