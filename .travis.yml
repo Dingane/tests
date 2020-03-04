@@ -3,7 +3,7 @@ services:
   - docker
 script:
   - docker build -t dingane/test .
-  - docker images mosipadp/test
+  - docker images dingane/test
 
 before_deploy:
   - docker login -u="mosipadp" -p="2fT&(cEHYRML8Wu"
