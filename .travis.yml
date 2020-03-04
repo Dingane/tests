@@ -9,5 +9,5 @@ script:
 before_deploy:
   - docker login -u="mosipadp" -p="2fT&(cEHYRML8Wu"
 
-deploy:
-  - docker push mosipadp/test
+after_success:
+    docker login -u="mosipadp" -p="2fT&(cEHYRML8Wu" && docker push mosipadp/test
