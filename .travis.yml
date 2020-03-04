@@ -2,20 +2,12 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t dingane/test .
+  - docker build -t mosipadp/test .
 script:
-  - docker images dingane/test
+  - docker images mosipadp/test
 
 before_deploy:
   - docker login -u="mosipadp" -p="2fT&(cEHYRML8Wu"
 
-deploy:
-  provider: script
-  script: bash docker_push
-  on:
-    branch: master
-
-
 after_success:
-    docker login -u="mosipadp" -p="2fT&(cEHYRML8Wu";
-    docker push dingane/test;
+    docker login -u="mosipadp" -p="2fT&(cEHYRML8Wu" && docker push mosipadp/test
