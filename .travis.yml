@@ -10,7 +10,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push mosipadp/test
+  script: bash docker_push
   on:
     branch: master
-
